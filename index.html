@@ -315,6 +315,15 @@ h1, h2, h3 {
             align-items: center;
         }
 
+        #bgAnimation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
         .footer-links a, .footer-social a {
             color: var(--text-color);
             text-decoration: none;
@@ -398,6 +407,7 @@ h1, h2, h3 {
     </style>
 </head>
 <body>
+    <canvas id="bgAnimation"></canvas>
     <nav>
         <div class="container">
             <div class="nav-content">
@@ -417,7 +427,7 @@ h1, h2, h3 {
         <section id="home" class="hero">
             <div class="container">
                 <h1 data-lang data-en="Ayhem" data-ja="アイハム">Ayhem</h1>
-                <p class="tagline" data-lang data-en="Versatile Full Stack Developer" data-ja="多才なフルスタック開発者">Versatile Full Stack Developer</p>
+                <p class="tagline" data-lang data-en="Full Stack Developer" data-ja="多才なフルスタック開発者">Versatile Full Stack Developer</p>
                 <p class="expertise" data-lang data-en="Expertise in WordPress, React Native, and e-commerce solutions" data-ja="WordPress、React Native、Eコマースソリューションの専門知識">Expertise in WordPress, React Native, and e-commerce solutions</p>
                 <div class="about-me">
                     <p data-lang data-en="I'm a passionate developer with a diverse skill set, ranging from frontend technologies to e-commerce solutions. With experience working in various roles across Japan, I bring a unique perspective to every project I undertake." data-ja="私は、フロントエンド技術からEコマースソリューションまで、幅広いスキルセットを持つ情熱的な開発者です。日本全国で様々な役割を経験してきたことで、各プロジェクトに独自の視点をもたらします。">I'm a passionate developer with a diverse skill set, ranging from frontend technologies to e-commerce solutions. With experience working in various roles across Japan, I bring a unique perspective to every project I undertake.</p>
@@ -784,6 +794,8 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleLanguage();
     }
 });
+
+
         </script>
     </body>
     </html>
